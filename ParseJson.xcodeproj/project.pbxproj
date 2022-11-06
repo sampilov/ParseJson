@@ -13,6 +13,7 @@
 		95B5F6682917E47F008B8DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B5F6662917E47F008B8DCC /* Main.storyboard */; };
 		95B5F66A2917E481008B8DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B5F6692917E481008B8DCC /* Assets.xcassets */; };
 		95B5F66D2917E481008B8DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B5F66B2917E481008B8DCC /* LaunchScreen.storyboard */; };
+		95B5F6752917F7D3008B8DCC /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B5F6742917F7D3008B8DCC /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		95B5F6692917E481008B8DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95B5F66C2917E481008B8DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95B5F66E2917E481008B8DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B5F6742917F7D3008B8DCC /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				95B5F6602917E47F008B8DCC /* AppDelegate.swift */,
 				95B5F6622917E47F008B8DCC /* SceneDelegate.swift */,
 				95B5F6642917E47F008B8DCC /* ViewController.swift */,
+				95B5F6742917F7D3008B8DCC /* Weather.swift */,
 				95B5F6662917E47F008B8DCC /* Main.storyboard */,
 				95B5F6692917E481008B8DCC /* Assets.xcassets */,
 				95B5F66B2917E481008B8DCC /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B5F6752917F7D3008B8DCC /* Weather.swift in Sources */,
 				95B5F6652917E47F008B8DCC /* ViewController.swift in Sources */,
 				95B5F6612917E47F008B8DCC /* AppDelegate.swift in Sources */,
 				95B5F6632917E47F008B8DCC /* SceneDelegate.swift in Sources */,
@@ -301,9 +305,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sampilov.ParseJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +335,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sampilov.ParseJson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

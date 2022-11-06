@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ParseJson
 //
-//  Created by Цырендылыкова Эржена on 06.11.2022.
+//  Created by Сампилов Ильдар on 06.11.2022.
 //
 
 import UIKit
