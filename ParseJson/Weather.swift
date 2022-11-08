@@ -11,5 +11,4 @@ struct Weather: Decodable {
     var temperature: String
     var wind: String
     var description: String
-    
 }
