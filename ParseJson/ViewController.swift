@@ -19,18 +19,21 @@ final class ViewController: UIViewController {
         let urlString = "https://goweather.herokuapp.com/weather/Curitiba"
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
             
-            guard let data = data else { return }
-            guard error == nil else { return }
+            guard let data = data, error == nil else {
+                print("error")
+                return
+                
+            }
             
             do {
                 let weather = try JSONDecoder().decode(Weather.self, from: data)
                 print(weather)
-                DispatchQueue.main.async {
-                    self.temperatureLabel.text = weather.temperature
-                    self.windLabel.text = weather.wind
-                    self.descriptionLabel.text = weather.description
+                DispatchQueue.main.async { [weak self] in
+                    self?.temperatureLabel.text = weather.temperature
+                    self?.windLabel.text = weather.wind
+                    self?.descriptionLabel.text = weather.description
                 }
                 
                 
